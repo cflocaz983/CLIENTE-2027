@@ -26,11 +26,13 @@ function abrirVentana() {
   ventana.document.write(
     `<h1>bienvenido a mi web ${document.getElementById("Edad").value}</h1>`,
   );
+  ventana.document.write("<input type='color' name='color' id='Color' />");
+  ventana.bgColor = document.getElementById("Color").value;
 }
 function cerrarVentana() {
   ventana.close();
 }
 function cambiarColor() {
   let color = document.getElementById("Color").value;
-  ventana.document.body.style.backgroundColor = color;
+  document.bgColor = color;
 }
