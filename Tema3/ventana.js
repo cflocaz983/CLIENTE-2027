@@ -26,7 +26,8 @@ function abrirVentana() {
   ventana.document.write(
     `<h1>bienvenido a mi web ${document.getElementById("Edad").value}</h1>`,
   );
-  ventana.document.write("<input type='color' name='color' id='Color'/>");
+  ventana.document.write(`<form action="" name="formulario">
+          <input type="color" name="color1" id="color1"></form>`);
   ventana.document.body.style.backgroundColor =
     document.getElementById("Color").value;
 }
